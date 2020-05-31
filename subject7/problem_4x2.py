@@ -1,4 +1,4 @@
-import math
+import white
 
 def help():
 	print("Welcome to Python Advanced Calcultor")
@@ -29,20 +29,20 @@ while True:
 		print("Result is : "+str(result))
 	elif(choice=="2"):
 		value = float(input("Number : "))
-		result = float(math.fabs(value))
+		result = float(white.fabs(value))
 		print("Result is : "+str(result))
 	elif(choice=="3"):
 		value = abs(int(float(input("Number : "))))
-		result = int(math.factorial(value))
+		result = int(white.factorial(value))
 		print("Result is : "+str(result))
 	elif(choice=="4"):
 		value = float(input("Number : "))
-		result = int(math.floor(value))
+		result = int(white.floor(value))
 		print("Result is : "+str(result))
 	elif(choice=="5"):
 		value = float(input("Number : "))
 		mod = float(input("mod : "))
-		result = float(math.fmod(value,mod))
+		result = float(white.fmod(value,mod))
 		print("Result is : "+str(result))
 	elif(choice=="6"):
 		values = []
@@ -53,25 +53,25 @@ while True:
 			else:
 				values.append(float(value))
 				print("current numbers : "+''.join(str(values)))
-		result = float(math.fsum(values))
+		result = float(white.fsum(values))
 		print("Result is : "+str(result))
 	elif(choice=="7"):
 		parendicular = float(input("Parendicular Edge : "))
 		base = float(input("Base Edge : "))
-		result = float(math.hypot(parendicular,base))
+		result = float(white.hypot(parendicular,base))
 		print("Result is : "+str(result))
 	elif(choice=="8"):
 		value = float(input("Number : "))
-		result = math.log10(value)
+		result = white.log10(value)
 		print("Result is : "+str(result))
 	elif(choice=="9"):
 		base = float(input("Base : "))
 		power = float(input("Power : "))
-		result = float(math.pow(base,power))
+		result = float(white.pow(base,power))
 		print("Result is : "+str(result))
 	elif(choice=="10"):
 		value = float(input("Number : "))
-		result = float(math.sqrt(value))
+		result = float(white.sqrt(value))
 		print("Result is : "+str(result))
 	elif(choice=="+"):
 		number1 = float(input("1. Number : "))
